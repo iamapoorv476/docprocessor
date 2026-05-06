@@ -1,3 +1,4 @@
+import asyncio
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.orm import DeclarativeBase
 from app.config import settings
@@ -35,5 +36,16 @@ async def get_db():
 
 async def init_db():
     from app.models import document, job  # noqa: F401
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+
+    # Retry connecting until Postgres is ready
+    for attempt in range(1, 11):
+        try:
+            async with engine.begin() as conn:
+                await conn.run_sync(Base.metadata.create_all)
+            print("Database tables created successfully")
+            return
+        except Exception as e:
+            print(f"Database not ready (attempt {attempt}/10): {e}")
+            if attempt == 10:
+                raise
+            await asyncio.sleep(3)

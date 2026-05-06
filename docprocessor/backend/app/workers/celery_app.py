@@ -18,8 +18,6 @@ celery_app.conf.update(
     task_acks_late=True,
     worker_prefetch_multiplier=1,
     task_reject_on_worker_lost=True,
-    result_expires=86400,  # 24 hours
-    task_routes={
-        "app.workers.tasks.process_document": {"queue": "processing"},
-    },
+    result_expires=86400,
+    broker_connection_retry_on_startup=True,
 )
