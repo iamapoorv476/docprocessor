@@ -1,0 +1,10 @@
+field,value
+document_id,a1b2c3d4-e5f6-7890-abcd-ef1234567890
+filename,invoice_q1_2024.txt
+status,completed
+finalized,True
+title,Invoice Q1 2024
+category,Finance
+summary,"Document 'invoice_q1_2024.txt' (312 bytes, text/plain) uploaded for processing."
+keywords,"[""invoice"", ""software"", ""cloud"", ""services""]"
+word_count,48

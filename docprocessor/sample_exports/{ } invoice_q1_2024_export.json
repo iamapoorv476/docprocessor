@@ -1,0 +1,19 @@
+{
+  "document_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "filename": "invoice_q1_2024.txt",
+  "title": "Invoice Q1 2024",
+  "category": "Finance",
+  "summary": "Document 'invoice_q1_2024.txt' (312 bytes, text/plain) uploaded for processing. Metadata extracted and fields identified.",
+  "keywords": ["invoice", "software", "cloud", "services", "total", "date"],
+  "file_metadata": {
+    "original_filename": "invoice_q1_2024.txt",
+    "file_size_bytes": 312,
+    "mime_type": "text/plain",
+    "extension": ".txt"
+  },
+  "word_count": 48,
+  "processing_metadata": {
+    "processed_at": "2024-05-05T10:23:45.123456",
+    "attempt": 1
+  }
+}

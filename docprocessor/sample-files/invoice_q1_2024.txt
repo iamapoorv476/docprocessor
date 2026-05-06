@@ -1,0 +1,5 @@
+INVOICE #INV-2024-001
+Date: January 15, 2024
+
+Services: Software Development $8,500 | Cloud Setup $2,300 | Docs $700
+Total Due: $12,477.50
