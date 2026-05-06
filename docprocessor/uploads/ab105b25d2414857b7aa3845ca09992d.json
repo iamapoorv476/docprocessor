@@ -1,1 +1,0 @@
-{"application":"DocProcessor","version":"1.0.0","async_processing":true,"stages":["parse","extract","store"]}
